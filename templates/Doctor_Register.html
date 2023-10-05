@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Animal Doctor</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+	<link rel="stylesheet" type="text/css" href="{{ url_for('static', filename='Register.css') }}">
+	<link rel="stylesheet" type="text/css" href="{{ url_for('static', filename='Common.css') }}">
+    <script src = "{{ url_for('static', filename='DoctorHome.js') }}"></script>
+  </head>
+  <body>
+    <header>
+      <nav>
+        <ul>
+          <li><a href="/">Home</a></li>
+          <li><a href="ContactUs.html">Contact Us</a></li>
+          {% if out %}
+            <li>Welcome {{ out }}</li>
+			<li><a href="/DoctorHome">Logout</a></li>
+          {% else %}
+            <li><a href="/Doctor_Login">Login/Register</a></li>
+          {% endif %}
+        </ul>
+      </nav>
+    </header>
+    <div class="background"></div>
+    <main>
+		<section id="register-form">
+			<h2>New Doctor Registeration</h2>
+			<form action="#" method="post">
+				<label for="name">Name</label>
+				<input type="text" id="name" name="name" required>
+        <label for="name">Animal1</label>
+				<input type="text" id="animal1" name="animal1" required>
+				<label for="name">Animal2</label>
+				<input type="text" id="animal2" name="animal2">
+				<label for="name">Animal3</label>
+				<input type="text" id="animal3" name="animal3">
+				<label for="email">Email</label>
+				<input type="email" id="email" name="email" required>
+				<label for="username">Username</label>
+				<input type="text" id="username" name="username" required>
+				<label for="password">Password</label>
+				<input type="password" id="password" name="password" required>
+        <div class="msg">{{ msg }}</div>
+				<input type="submit" value="Register">
+			</form>
+      <a href="{{url_for('Doctor_Login')}}">Already Have an Account? Sign In Here</a>
+		</section>
+    </main>
+  </body>
+</html>

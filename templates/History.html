@@ -1,0 +1,109 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <!-- The above 3 meta tags *must* come first in the head; any other head content must come *after* these tags -->
+    <title>Zoo Keeping System</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename = 'History.css')}}">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@3.4.1/dist/css/bootstrap.min.css" integrity="sha384-HSMxcRTRxnN+Bdg0JdbxYKrThecOKuH5zCYotlSAcp1+c8xmyTe9GYg1l9a69psu" crossorigin="anonymous">
+  </head>
+
+  <body>
+    <nav class="navbar my-custom-navbar">
+      <div class='bg-image'>
+        <div class="logo-container">
+            <img src="static/images/Logo.jpg" alt="Logo" class="logo-image">
+        </div>
+        <div class="container-fluid">
+            <h1 style="text-align: center;  font-size: 60px ; color: white" >Welcome to Gen-Z Zoo</h1> 
+        </div>
+      <ul class="nav navbar-nav">
+          <li class ="active"></li>
+          <li><a href="/" style="font-size: 25px;color: indigo; background-color: white; opacity: 0.7;">Home</a></li>
+          <li>
+            <a href="/Animal_Info" style="font-size: 25px;color: indigo; background-color: white; opacity: 0.7;">Animal Info</a>
+          </li>
+          <li><a href="/DoctorHome"style="font-size: 25px;color: indigo; background-color: white; opacity: 0.7;">Are You a Vet?</a></li>
+          <li><a href="/AdoptionHome"style="font-size: 25px;color: indigo; background-color: white; opacity: 0.7;">Adoption</a></li>
+      </ul>
+      <div class="nav navbar-nav navbar-right">
+          <li><a href="/Admin_Login"style="font-size: 25px;color: indigo; background-color: white; opacity: 0.7;">
+              <i class="glyphicon glyphicon-log-in"></i>
+        Admin Login
+          </a></li>
+          <li class="dropdown" >
+            <a href="#" style="font-size: 25px;color: indigo; background-color: white; opacity: 0.7;" class="dropdown-toggle"data-toggle="dropdown"><i class="glyphicon glyphicon-user"></i> About
+                <span class="caret"></span>
+            </a>
+        <ul class="dropdown-menu" role="menu" style="color: rgba(25, 25, 25);">
+          <li><a href="/History"style="font-size: 25px;color: indigo; background-color: white; opacity: 0.7;" >History of Zoo</a></li>
+  
+          <li><a href="/Reach_Us"style="font-size: 25px;color: indigo; background-color: white; opacity: 0.7;" >How to reach us</a></li>
+  
+  
+        </ul></li>
+          
+      </div>
+  
+      </div>
+    </div>
+    <h1 style="text-align: center;color: #f0f0f0;font-size: 50px;">Our History</h1>
+   </nav>
+  <script src="https://code.jquery.com/jquery-1.12.4.min.js" integrity="sha384-nvAa0+6Qg9clwYCGGPpDQLVpLNn0fRaROjHqs13t4Ggj3Ez50XnGQqc/r8MhnRDZ" crossorigin="anonymous"></script>
+    
+  
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@3.4.1/dist/js/bootstrap.min.js" integrity="sha384-aJ21OjlMXNL5UyIl/XNwTMqvzeRMZH2w8c5cRVpzpU8Y5bApTppSuUkhZXN0VxHd" crossorigin="anonymous"></script>
+  <div class="row">
+    <div class="col-sm-4">
+      <img src="/static/images/History.jpg" class="img-fluid">
+    </div>
+    <div class="col-sm-4 text-center">
+      <p style="font-size: 20px;color: aliceblue;">Gen-Z Zoological Park is one of the oldest zoos in India, established in 1959. The zoo aims to provide a safe and healthy environment for wild animals, as well as to educate the public about the importance of conservation. Over the years, the zoo has become a popular attraction for tourists and locals alike, with a diverse range of animals including tigers, lions, elephants, and many more.</p>
+    </div>
+    <div style="display:flex; flex-direction: column;">
+      <a href="#" style="background-color:brown; color:white; padding:30px; width:50%; height:50px; display:block; text-decoration:none; font: size 50px;margin-bottom:10px;">
+        <span class="glyphicon glyphicon-heart"></span> Adopt our animals
+      </a>
+      <a href="#" style="background-color:brown; color:white; padding:30px; width:50%; height:50px; display:block; text-decoration:none; margin-bottom:10px;">
+        <span class="glyphicon glyphicon-book"></span> Online ticket booking
+      </a>
+      <a href="#" style="background-color:brown; color:white; padding:30px; width:50%; height:50px; display:block; text-decoration:none; margin-bottom:10px;">
+        <span class="glyphicon glyphicon-facetime-video"></span> Live virtual zoo
+      </a>
+      <a href="#" style="background-color:brown; color:white; padding:30px; width:50%; height:50px; display:block; text-decoration:none; margin-bottom:10px;">
+        <span class="glyphicon glyphicon-phone"></span> Download mobile app
+      </a>
+    </div>
+    
+  </div>
+  <footer class="container-fluid div">
+    <div class="row">
+        <div class="col-sm-4"></div>
+        <div class="col-sm-4">
+            <h3>Newsletter</h3>
+            <p>Sign up for our newsletter to stay updated on the latest news and events at Thiagarajar Zoological Park.</p>
+            <form>
+                <div class="form-group">
+                    <input type="email" class="form-control" placeholder="Enter your email address">
+                </div>
+                <button type="submit" class="btn btn-default">Subscribe</button>
+            </form>
+        </div>
+        <div class="col-sm-4">
+            <h3>Contact Us</h3>
+            <p style="font-size: 25px;color: black;">Thiagarajar Zoological Park</p>
+            <p style="font-size: 25px;color: black;">Vandiyur, Madurai - 625 018</p>
+            <p style="font-size: 25px;color: black;">Tamil Nadu, India</p>
+            <p style="font-size: 25px;color: black;">Email: info@tzp.in</p>
+            <p style="font-size: 25px;color: black;">Phone: +91 1234567890</p>
+        </div>
+    </div>
+</footer>
+
+  
+</body>
+
+
+</html>

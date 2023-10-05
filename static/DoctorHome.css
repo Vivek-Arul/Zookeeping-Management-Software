@@ -1,0 +1,43 @@
+main {
+  max-width: 650px;
+  margin: auto;
+}
+
+h1 {
+  font-size: 2.5rem;
+  text-align: center;
+  margin-top: 6rem;
+  margin-bottom: 1rem;
+}
+
+p {
+  margin-bottom: 1.5rem;
+}
+
+ul {
+  margin-bottom: 1.5rem;
+}
+
+li {
+  margin-bottom: 0.5rem;
+}
+
+.slideshow {
+  position: relative;
+  width: 100%;
+  height: 400px; /* set the height to whatever you want */
+}
+
+.slide {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  opacity: 0;
+  transition: opacity 2s ease-in-out; /* adjust the duration here */
+}
+
+.slide.active {
+  opacity: 1;
+}

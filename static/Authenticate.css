@@ -1,0 +1,64 @@
+/* Center the main container */
+main {
+	display: flex;
+	flex-wrap: wrap;
+	justify-content: center; /* Change to center */
+	max-width: 650px;
+	margin: auto;
+	height: 100%; /* Add height */
+	z-index: 1;
+  }
+  
+  /* Adjust the width of the sections */
+  section {
+	background-color: #f7f7f7;
+	border-radius: 5px;
+	box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+	padding: 20px;
+	width: 60%; /* Decrease width to give some space in between */
+	margin-bottom: 20px;
+  }
+  
+  /* Adjust the font size to make it more readable */
+  section h2 {
+	font-size: 28px;
+	margin-top: 5rem;
+  }
+  
+  /* Center the form inside the section */
+  form {
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+  }
+  
+  /* Adjust the input width to make it more readable */
+  form input[type="text"],
+  form input[type="email"],
+  form input[type="password"] {
+	border: 2px solid #cccccc;
+	border-radius: 3px;
+	font-size: 16px;
+	padding: 10px;
+	width: 100%;
+	margin-bottom: 20px; /* Increase margin to give more space */
+  }
+  
+  /* Adjust the submit button to make it more readable */
+  form input[type="submit"] {
+	background-color: #3c3c3c;
+	border: none;
+	border-radius: 3px;
+	color: #ffffff;
+	cursor: pointer;
+	font-size: 16px;
+	padding: 10px;
+	width: 100%;
+	margin-top: 20px; /* Add margin to give more space */
+  }
+  
+  /* Show the register form */
+  #register-form {
+	display: none;
+  }
+  

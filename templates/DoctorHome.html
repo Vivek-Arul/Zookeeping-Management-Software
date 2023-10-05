@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Animal Doctor</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+	<link rel="stylesheet" type="text/css" href="{{ url_for('static', filename='Common.css') }}">
+    <link rel="stylesheet" href="{{ url_for('static', filename='DoctorHome.css') }}">
+    <script src = "{{ url_for('static', filename='DoctorHome.js') }}"></script>
+  </head>
+  <body>
+    <header>
+      <nav>
+        <ul>
+          <li><a href="/">Home</a></li>
+          <li><a href="/Doctor_ContactUs">Contact Us</a></li>
+          {% if msg %}
+            <li><a href="/DoctorHome">Welcome {{ msg }}</a></li>
+			<li><a href="/DoctorHome">Logout</a></li>
+          {% else %}
+            <li><a href="/Doctor_Login">Login/Register</a></li>
+          {% endif %}
+        </ul>
+      </nav>
+    </header>
+    <div class="background"></div>
+    <main>
+      <h1>Welcome to Animal Doctor</h1>
+      <p>We provide veterinary care and support for a variety of animals, including:</p>
+      <ul>
+        <li>Elephants</li>
+        <li>Giraffes</li>
+        <li>Lions</li>
+        <li>Tigers</li>
+        <li>Zebras</li>
+        <li>And many more!</li>
+      </ul>
+      <div class="slideshow">
+        <img class = "slide" src = "../static/images/Lion.jpg" alt="Lion">
+        <img class = "slide" src = "../static/images/Tiger.jpg" alt="Tiger">
+        <img class = "slide" src = "../static/images/Giraffe.jpg" alt="Giraffe">
+        <img class = "slide" src = "../static/images/Elephant.jpg" alt="Elephant">
+        <img class = "slide" src = "../static/images/Koala.jpg" alt="Koala">
+	  </div>
+      <p>Our dedicated team of animal doctors work hard every day to ensure that our animal residents are healthy and happy. From routine checkups and vaccinations to emergency care and surgeries, we strive to provide the best possible care for our animals.</p>
+      <p>If you are interested in scheduling an appointment for your animal or learning more about our veterinary services and programs, please don't hesitate to contact us. We would love to hear from you!</p>
+    </main>
+  </body>
+</html>

@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Animal Doctor</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+	<link rel="stylesheet" type="text/css" href="{{ url_for('static', filename='Authenticate.css') }}">
+	<link rel="stylesheet" type="text/css" href="{{ url_for('static', filename='Common.css') }}">
+    <script src = "{{ url_for('static', filename='DoctorHome.js') }}"></script>
+  </head>
+  <body>
+    <header>
+      <nav>
+        <ul>
+          <li><a href="/">Home</a></li>
+          <li><a href="/Doctor_ContactUs">Contact Us</a></li>
+          {% if out %}
+            <li>Welcome {{ out }}</li>
+			<li><a href="/DoctorHome">Logout</a></li>
+          {% else %}
+            <li><a href="/Doctor_Login">Login/Register</a></li>
+          {% endif %}
+        </ul>
+      </nav>
+    </header>
+    <div class="background"></div>
+    <main>
+		{% if not user %}
+		<section>
+			<h2>Doctor Login</h2>
+			<form action="/Doctor_Login" method="post">
+				<label for="username">Username</label>
+				<input type="text" id="username" name="username" required>
+				<label for="password">Password</label>
+				<input type="password" id="password" name="password" required>
+				<input type="submit" value="Login">
+        <div class="msg">{{ msg }}</div>
+			</form>
+			<a href="{{url_for('Doctor_Register')}}">Don't have an account? Register here</a>
+		</section>
+		{% endif %}
+    </main>
+  </body>
+</html>

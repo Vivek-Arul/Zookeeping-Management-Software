@@ -1,0 +1,63 @@
+body {
+	font-family: 'Roboto', sans-serif;
+	font-size: 16px;
+	line-height: 1.5;
+	color: #333;
+	margin: 0;
+	padding: 0;
+}
+
+.background {
+	position: fixed;
+	top: 0;
+	left: 0;
+	width: 100%;
+	height: 100%;
+	background-image: url('../static/images/wood.jpg');
+	background-repeat: no-repeat;
+	background-size: cover;
+	background-position: center;
+	opacity: 0.6;
+	z-index: -1; /* make sure the background is behind other content */
+}
+
+header {
+	background-color: #fff;
+	border-bottom: 1px solid #ddd;
+	box-shadow: 0 1px 2px rgba(0, 0, 0, 0.1);
+	position: fixed;
+	top: 0;
+	left: 0;
+	right: 0;
+	z-index: 999;
+}
+
+nav {
+	max-width: 960px;
+	margin: 0 auto;
+}
+
+ul {
+	list-style: none;
+	margin: 0;
+	padding-top: 0;
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+}
+
+li {
+	margin: 0;
+}
+
+a {
+	display: block;
+	padding: 1rem;
+	color: #333;
+	text-decoration: none;
+	transition: all 0.1s ease-in-out;
+}
+
+a:hover {
+	background-color: #ddd;
+}

@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Your Appointments</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+	<link rel="stylesheet" type="text/css" href="{{ url_for('static', filename='Register.css') }}">
+	<link rel="stylesheet" type="text/css" href="{{ url_for('static', filename='Common.css') }}">
+    <script src = "{{ url_for('static', filename='DoctorHome.js') }}"></script>
+  </head>
+  <body>
+    <header>
+        <nav>
+          <ul>
+            <li><a href="/DoctorHome">Home</a></li>
+            <li><a href="ContactUs.html">Contact Us</a></li>
+            {% if out %}
+            <li>Welcome {{ out }}</li>
+			<li><a href="/DoctorHome">Logout</a></li>
+          {% else %}
+            <li><a href="/Doctor_Login">Login/Register</a></li>
+          {% endif %}
+          </ul>
+        </nav>
+      </header>
+      <main>
+        <h1 style="padding-top: 10rem">Registration Succesfull. Kindly Login</h1>
+      </main>
+</html>

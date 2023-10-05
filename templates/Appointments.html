@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Your Appointments</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+	<link rel="stylesheet" type="text/css" href="{{ url_for('static', filename='Register.css') }}">
+	<link rel="stylesheet" type="text/css" href="{{ url_for('static', filename='Common.css') }}">
+    <script src = "{{ url_for('static', filename='DoctorHome.js') }}"></script>
+  </head>
+  <body>
+    <header>
+        <nav>
+          <ul>
+            <li><a href="/">Home</a></li>
+            <li><a href="ContactUs.html">Contact Us</a></li>
+            <li name='username'>Login Succesfull {{username}}</li>
+			<li><a href="/DoctorHome">Logout</a></li>
+          </ul>
+        </nav>
+      </header>
+      <div class="background"></div>
+      <main>
+        <h1 style="padding-top: 5rem"> Your Appointments </h1>
+        <table border = "2">
+            <thead>
+                <tr>
+                    <th> Date of Appointment </th>
+                    <th> Time </th>
+                    <th> Animal </th>
+                    <th> Sickness Encountered </th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td> {{data[1]}} </td>
+                    <td> {{data[2]}} </td>
+                    <td> {{data[3]}} </td>
+                    <td> {{data[4]}} </td>
+                </tr>
+            </tbody>
+        </table>
+<br><br>
+        
+      <h1> Your Reports </h1>
+      </main>
+        <table border = "2" style="margin: auto">
+            <thead>
+                <tr>
+                    <th> Date of Appointment </th>
+                    <th> Status </th>
+                    <th> Animal </th>
+                    <th> Next Visit </th>
+                </tr>
+            </thead>
+        </table>
+    </body>
+</html>

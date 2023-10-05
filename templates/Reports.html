@@ -1,0 +1,158 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Transparent Cards with Background Image</title>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<!-- Bootstrap CSS -->
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+	<!-- Custom CSS -->
+	<style>
+		body {
+			background-image: url('static/images/wood.jpg');
+			background-size: cover;
+			background-position: center;
+		}
+		.card {
+			background-color: rgba(255, 255, 255, 0.7);
+			margin-bottom: 20px;
+			border: none;
+			box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.3);
+		}
+		.card-header {
+			background-color: transparent;
+			border: none;
+			text-align: center;
+			font-size: 24px;
+			font-weight: bold;
+		}
+		.card-body {
+			padding: 20px;
+		}
+		.card-text {
+			font-size: 18px;
+			font-weight: bold;
+			margin-bottom: 5px;
+		}
+    table {
+  border-collapse: collapse;
+  border: 20px solid black;
+  width: 80%;
+  margin: auto;
+  padding: 20px;
+}
+
+th, td {
+  padding: 20px;
+  text-align: center;
+  font-size: 20px;
+  color: white;
+}
+
+th {
+  background-color: #ccc;
+}
+
+	</style>
+</head>
+<body>
+  <br>
+  <h1 style="text-align: center; font-size: 50px; color: aliceblue;">
+    Report 
+  </h1>
+  <br>
+  <br>
+	<div class="container">
+		<div class="row">
+
+			<div class="col-md-4">
+				<div class="card">
+					<div class="card-header">Total Doctors{{ data1 }}</div>
+					<div class="card-body">
+						<p class="card-text">{{ data1 }}</p>
+					</div>
+				</div>
+			</div>
+			<div class="col-md-4">
+				<div class="card">
+					<div class="card-header">Total Zookeepers</div>
+					<div class="card-body">
+						<p class="card-text">{{ data2 }}</p>
+					</div>
+				</div>
+			</div>
+			<div class="col-md-4">
+				<div class="card">
+					<div class="card-header">Total Animals</div>
+					<div class="card-body">
+						<p class="card-text">{{ data3 }}</p>
+					</div>
+				</div>
+			</div>
+
+		</div> <div class="container mt-5">
+    <h1 style="color: aliceblue; font-size: 30px; text-align: center;"> Zoo Animal Details Details of Gen-Z Zoological Park</h1>
+    <br>
+    <br>
+  
+    <table class="table table-bordered">
+      <thead>
+        <tr>
+          <th>Name of Animal</th>
+          <th>Animal Image</th>
+          <th>Breed</th>
+          <th>Description</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr>
+          <td></td>
+          <td></td>
+          <td></td>
+          <td></td>
+        </tr>
+        <tr>
+          <td></td>
+          <td></td>
+          <td></td>
+          <td></td>
+        </tr>
+        <tr>
+          <td></td>
+          <td></td>
+          <td></td>
+          <td></td>
+        </tr>
+        <tr>
+          <td></td>
+          <td></td>
+          <td></td>
+          <td></td>
+        </tr>
+        <tr>
+          <td></td>
+          <td></td>
+          <td></td>
+          <td></td>
+        </tr>
+      </tbody>
+    </table>
+  </div>
+  <br>
+  <div class="text-center">
+    <a href="file:///F:/Zoo/admin.html#" class="btn btn-primary">Adoption Home</a>
+  </div>
+      
+  <br>
+
+ 
+      
+      
+  </div>
+	</div>
+	<!-- Bootstrap JS -->
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
+	<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+</body>
+</html>

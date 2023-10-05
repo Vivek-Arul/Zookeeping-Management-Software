@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title >Admin Login</title>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+    <link rel="stylesheet" href="{{ url_for('static',filename='Admin_Login.css') }}">
+  </head>
+  <body>
+    <header>
+      <div class="container">
+        <h1 style="color: lightblue; text-align: center;">Admin Login</h1>
+      </div>
+    </header>
+    <!-- Main Content Section -->
+    <main>
+      <div class="container">
+        <div class="row justify-content-center">
+          <div class="col-md-6">
+            <div class="card">
+              <div class="card-body">
+                <form method = post>
+                  <div class="form-group">
+                    <label for="username">Username:</label>
+                    <input type="text" class="form-control" id="username" name="username">
+                  </div>
+                  <div class="form-group">
+                    <label for="password">Password:</label>
+                    <input type="password" class="form-control" id="password" name="password">
+                  </div>
+                  {% if msg %}
+                  <div>{{ msg }}</div>
+                  {% endif %}
+                  <input type="submit" class="btn btn-primary">
+                  <a href="/" class="btn btn-link">Back to Home</a>
+                </form>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </main>
+    <!-- Bootstrap JavaScript -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+    <hr>
+    <footer class="container-fluid div">
+        <div class="row">
+            <div class="col-sm-4">
+                <h3>Site Map</h3>
+                <ul>
+                    <li><a href="/" style="font-size: 25px;color: black;">Home</a></li>
+                    <li><a href="/Animal_Info" style="font-size: 25px;color: black;">Animal Info</a></li>
+                    <li><a href="/DoctorHome" style="font-size: 25px;color: black;">Are you a Vet?</a></li>
+                    <li><a href="#" style="font-size: 25px;color: black;">Zoo Keeper</a></li>
+                    <li><a href="#" style="font-size: 25px;color: black;">Adoption</a></li>
+                    <li><a href="/History" style="font-size: 25px;color: black;">About</a></li>
+                </ul>
+            </div>
+            <div class="col-sm-4">
+                <h3>Newsletter</h3>
+                <p>Sign up for our newsletter to stay updated on the latest news and events at Gen-Z Zoological Park.</p>
+                <form>
+                    <div class="form-group">
+                        <input type="email" class="form-control" placeholder="Enter your email address">
+                    </div>
+                    <button type="submit" class="btn btn-default">Subscribe</button>
+                </form>
+            </div>
+            <div class="col-sm-4">
+                <h3>Contact Us</h3>
+                <p style="font-size: 25px;color: black;">Thiagarajar Zoological Park</p>
+                <p style="font-size: 25px;color: black;">Vandiyur, Madurai - 625 018</p>
+                <p style="font-size: 25px;color: black;">Tamil Nadu, India</p>
+                <p style="font-size: 25px;color: black;">Email: info@tzp.in</p>
+                <p style="font-size: 25px;color: black;">Phone: +91 1234567890</p>
+            </div>
+        </div>
+    </footer>
+    
+  </body>
+</html>

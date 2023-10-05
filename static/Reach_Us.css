@@ -1,0 +1,56 @@
+body {
+        
+    color:black;
+ 
+  }
+ /* styles.css */
+body {
+background-color: #f0f0f0;
+}
+
+
+  li{
+      text-decoration: solid;
+      text-decoration-color:black;
+  }
+  .my-custom-navbar {
+background-color: rgba(255, 255, 255, 0.308);
+/* Additional custom styles for your navigation bar */
+}
+.bg-image {
+background-image: url('image/back.jpg'); /* Replace with the URL of your desired image */
+background-size: cover;
+background-position: center;
+background-repeat: no-repeat;
+background-attachment: fixed;
+height: 100vh;
+}
+
+img {
+width: 450px;
+height: 400px;
+margin: 10px;
+padding: 5px;
+}
+body {
+background: url("image/wood.jpg") center/cover no-repeat;
+background-size: cover;
+background-position: center;
+background-repeat: no-repeat;
+background-attachment: fixed;
+}
+
+.logo-container {
+width: 100px; /* Set the width of the container to fit the logo */
+position: absolute; /* Position the container absolutely */
+top: 10px; /* Align the container to the top of the page */
+left: 30px; /* Align the container to the left of the page */
+}
+
+.logo-image {
+max-width: 100%; /* Ensure the image scales down to fit the container */
+height: auto; /* Maintain the aspect ratio of the image */
+}
+.div{
+background-color: rgba(255, 255, 255, 0.308);
+}
